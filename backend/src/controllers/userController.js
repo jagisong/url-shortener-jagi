@@ -10,7 +10,6 @@ exports.getUsers = async (req, res) => {
 };
 
 exports.addUser = async (req, res) => {
-  console.log('add user reached');
   try {
     const { name, email } = req.body;
     const userId = await User.createUser(name, email);
